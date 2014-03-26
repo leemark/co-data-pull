@@ -1,0 +1,28 @@
+.content{
+    max-width: 900px;
+    margin: 1em auto;
+    font-family: 'Cantarell', sans-serif;
+}
+.content h1{
+     font-family: 'Fjalla One', sans-serif;
+}   
+.content li{
+    text-transform: lowercase;
+    margin-bottom: 1em;
+}
+.content span {
+    text-transform: capitalize;
+}
+.name{
+    font-weight: bold;   
+}
+.addr:after{
+    content: ',';   
+}
+.fa-refresh{
+    font-size: 5em;
+    color: #999;
+    position: relative;
+    left: 30%;
+    margin-top: 1em;
+}
