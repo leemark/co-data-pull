@@ -20,6 +20,10 @@
                 //iterate through the returned data and build a list
                 items.push( "<li id='" + key + "'><span class='name'>" + val.entityname + "</span><br><span class='addr'>" + val.principaladdress1 + "</span> <span class='city'>" + val.principalcity + "</span></li>" );
             });
+            // if no items were returned then add a message to that effect
+            if(items.length < 1){
+                items.push( "<li>No results for this ZIP code, try again!</li>" );
+            }
             
             // remove spinner
             $('.fa-spin').remove();
