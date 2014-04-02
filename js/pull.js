@@ -6,8 +6,8 @@
         $('<i class="fa fa-refresh fa-spin"/>').appendTo('body');
         
         // get selected zip code from selectbox
-        var zip = $('select option:selected').text().substring(0, 6);
-        
+        var zip = $('select option:selected').text().substring(1, 6);
+
         // make AJAX call
         $.getJSON('http://data.colorado.gov/resource/4ykn-tg5h.json?entityStatus=Good%20Standing&principalZipCode=' + zip, function (data) {
             
