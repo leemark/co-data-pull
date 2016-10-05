@@ -9,7 +9,7 @@
         var zip = $('select option:selected').text().substring(1, 6);
 
         // make AJAX call
-        $.getJSON('http://data.colorado.gov/resource/4ykn-tg5h.json?entityStatus=Good%20Standing&principalZipCode=' + zip, function (data) {
+        $.getJSON('http://data.colorado.gov/resource/4ykn-tg5h.json?entitystatus=Good%20Standing&principalzipcode=' + zip, function (data) {
             
             // do all this on success       
             var items = [],
